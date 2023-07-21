@@ -1,78 +1,178 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
- </head>
- <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">logo</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porftolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="bg-white fixed-top">
+    <div class="navbar container navbar-expand">
+      <div class="container navbar-brand">
+        <span id="navbar__logo">My Logo</span>
+      </div>
+      <ul class="container col-3 nav list-unstyled navbar__nav">
+        <li class="nav-item nav__option">
+          <a href="#portfolio">Porftolio</a>
+        </li>
+        <li class="nav-item nav__option">
+          <a href="#about">About</a>
+        </li>
+        <li class="nav-item nav__option">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <section class="d-flex flex-column justify-content-center" id="front-page">
+    <div class="container col-7 mt-4 text-container">
+      <h1 class="text-dark text-container__title">
+        I’m Umarah.
+        <br />
+        Glad to see you!
+      </h1>
+      <p class="text-container__body">
+        I’m a software developer! I can help you build a product , feature or
+        website Look through some of my work and experience! If you like what
+        you see and have a project you need coded, don’t hesitate to contact
+        me.
+      </p>
+      <h2 class="text-container__byline text-uppercase">Let's connect</h2>
+      <ul class="nav list-unstyled social-media gap-3">
+        <li>
+          <a href="#">
+            <img class="social-media_icon" src="images/twitter.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="social-media_icon" src="images/Linkedin icon.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="social-media_icon" src="images/medium.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="social-media_icon" src="images/github.png" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="social-media_icon" src="images/angellist - Copy.png" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="container" id="portfolio">
+    <div class="container d-flex flex-column py-5">
+      <div class="container card my-5 d-flex flex-row p-3 rounded-4 justify-content-between gap-4">
+        <img class="card-img w-50 h-50" src="images/image-works-1-desktop.png" />
+        <div class="container d-flex flex-column gap-2">
+          <h2 class="card-title mt-4">Tonic</h2>
+          <h3 class="card-subtitle d-flex flex-row gap-2">
+            <span class="portfolio__client">CANOPY</span>
+            <span class="portfolio__bullet"> • </span>End Dev<span class="portfolio__bullet">
+              • </span>2015
+          </h3>
+          <p class="mt-4">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="list-unstyled d-flex gap-2">
+            <li class="badge">HTML</li>
+            <li class="badge">CSS</li>
+            <li class="badge">javaScript</li>
           </ul>
+          <a href="#" class="mt-3 py-2 align-self-start btn btn-outline-primary" tabindex="-1" role="button">
+            See project
+          </a>
         </div>
-      </nav>
-      <div class="bg-image p-10 top"  >
-            <div class="descripiton text-center">
-              <h1> I'm Umarah. Glad to see you!</h1>
-              <p>I’m a software developer! I can help you build a product , feature 
-                or website Look through some of my work and experience! If you like what
-                  you see and have a project you need coded, don’t hesitate to contact me.</p>
-                  <button type="button" class="btn btn-primary">Let's connect</button>
-            </div>
       </div>
+      <div class="container card my-5 flex-row-reverse p-3 rounded-4 justify-content-between gap-4">
+        <img class="card-img w-50 h-50" src="images/image-works-2-desktop.png.png" />
+        <div class="container d-flex flex-column gap-2">
+          <h2 class="card-title mt-4">Multi-Post Stories</h2>
+          <h3 class="card-subtitle d-flex flex-row gap-2">
+            <span class="portfolio__client">CANOPY</span>
+            <span class="portfolio__bullet"> • </span>End Dev<span class="portfolio__bullet">
+              • </span>2015
+          </h3>
+          <p class="mt-4">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="list-unstyled d-flex gap-2">
+            <li class="badge">HTML</li>
+            <li class="badge">CSS</li>
+            <li class="badge">javaScript</li>
+          </ul>
+          <a href="#" class="mt-3 py-2 align-self-start btn btn-outline-primary" tabindex="-1" role="button">
+            See project
+          </a>
+        </div>
+      </div>
+      <div class="container card my-5 flex-row p-3 rounded-4 justify-content-between gap-4">
+        <img class="card-img w-50 h-50" src="images/image-works-3-desktop.png" />
+        <div class="container d-flex flex-column gap-2">
+          <h2 class="card-title mt-4">Tonic</h2>
+          <h3 class="card-subtitle d-flex flex-row gap-2">
+            <span class="portfolio__client">CANOPY</span>
+            <span class="portfolio__bullet"> • </span>End Dev<span class="portfolio__bullet">
+              • </span>2015
+          </h3>
+          <p class="mt-4">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="list-unstyled d-flex gap-2">
+            <li class="badge">HTML</li>
+            <li class="badge">CSS</li>
+            <li class="badge">javaScript</li>
+          </ul>
+          <a href="#" class="mt-3 py-2 align-self-start btn btn-outline-primary" tabindex="-1" role="button">
+            See project
+          </a>
+        </div>
+      </div>
+      <div class="container card my-5 flex-row-reverse p-3 rounded-4 justify-content-between gap-4">
+        <img class="card-img w-50 h-50" src="images/image-works-4-desktop.png" />
+        <div class="container d-flex flex-column gap-2">
+          <h2 class="card-title mt-4">Multi-Post Stories</h2>
+          <h3 class="card-subtitle d-flex flex-row gap-2">
+            <span class="portfolio__client">CANOPY</span>
+            <span class="portfolio__bullet"> • </span>End Dev<span class="portfolio__bullet">
+              • </span>2015
+          </h3>
+          <p class="mt-4">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="list-unstyled d-flex gap-2">
+            <li class="badge">HTML</li>
+            <li class="badge">CSS</li>
+            <li class="badge">javaScript</li>
+          </ul>
+          <a href="#" class="mt-3 py-2 align-self-start btn btn-outline-primary" tabindex="-1" role="button">
+            See project
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container" id="contact"></section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
 
-      <div class="card p-10 "> 
-        <div class="card-body">
-         <div class="row">
-            <div class="col-lg-6">
-                <img class="card-img-left" src="images/image-works-1-desktop.png" alt="Card image">
-        </div>
-        <div class="col-lg-6">
-            <div class="card-title">Tonic</div>
-            <div class="card-text">A daily selection of privately personalized reads;
-            no accounts or sign-ups required.</div>
-        </div>
-        </div>        
-      </div>
-
-      <div class="card p-10 "> 
-        <div class="card-body">
-         <div class="row">
-            <div class="col-lg-6">
-                <img class="card-img-right" src="images/image-works-2-desktop.png.png" alt="Card image">
-        </div>
-        <div class="col-lg-6">
-            <div class="card-title">Tonic</div>
-            <div class="card-text">A daily selection of privately personalized reads;
-            no accounts or sign-ups required.</div>
-        </div>
-        </div>        
-      </div>
-
-      <div class="card p-10 "> 
-        <div class="card-body">
-         <div class="row">
-            <div class="col-lg-6">
-                <img class="card-img-left" src="images/image-works-3-desktop.png" alt="Card image">
-        </div>
-        <div class="col-lg-6">
-            <div class="card-title">Tonic</div>
-            <div class="card-text">A daily selection of privately personalized reads;
-            no accounts or sign-ups required.</div>
-        </div>
-        </div>        
-      </div>
-      
- </body>
- </html>
+</html>
